@@ -10,7 +10,7 @@
     "test:app": "nx test my-new-app",
     "build:design-system": "nx build @my-monorepo/design-system",
     "dev:app:start": "npx nx serve my-new-app",
-    "chromatic": "cross-env nx build-storybook design-system && cross-env chromatic --project-token=$CHROMATIC_PROJECT_TOKEN --storybook-build-dir=packages/design-system/storybook-static"
+    "chromatic": "nx build-storybook design-system && chromatic --storybook-build-dir=packages/design-system/storybook-static"
   },
   "private": true,
   "devDependencies": {

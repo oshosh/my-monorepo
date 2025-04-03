@@ -15,6 +15,10 @@
     },
     "./styles/*": "./src/styles/*"
   },
+  "scripts": {
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006"
+  },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
