@@ -1,0 +1,12 @@
+{
+  "name": "my-new-app",
+  "private": true,
+  "dependencies": {
+    "@my-monorepo/design-system": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path-intellisense.mappings": {
+    "@design-system": "${workspaceFolder}/packages/design-system/src"
+  },
+  "files.associations": {
+    "*.mdx": "mdx"
+  },
+  "mdx.experimentalLanguageServer": true,
+  "[mdx]": {
+    "editor.formatOnSave": true
+  }
+}

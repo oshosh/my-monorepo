@@ -1,0 +1,200 @@
+/**
+ * Color Theme 
+ * 색상 테스트 : https://material-foundation.github.io/material-theme-builder/
+ * 색상 규칙 : https://m3.material.io/styles/color/roles
+ */
+:root {
+  &.light-mode {
+    &.standard-contrast {
+      --osh-color-primary: #8f4b39;
+      --osh-color-on-primary: #ffffff;
+      --osh-color-primary-container: #ffdbd1;
+      --osh-color-on-primary-container: #723524;
+
+      --osh-color-secondary: #77574e;
+      --osh-color-on-secondary: #ffffff;
+      --osh-color-secondary-container: #ffdbd1;
+      --osh-color-on-secondary-container: #5d4038;
+
+      --osh-color-tertiary: #6c5d2f;
+      --osh-color-on-tertiary: #ffffff;
+      --osh-color-tertiary-container: #f6e1a6;
+      --osh-color-on-tertiary-container: #534619;
+
+      --osh-color-error: #ba1a1a;
+      --osh-color-on-error: #ffffff;
+      --osh-color-error-container: #ffdad6;
+      --osh-color-on-error-container: #93000a;
+
+      --osh-color-surface-dim: #e8d6d2;
+      --osh-color-surface: #fff8f6;
+      --osh-color-surface-bright: #fff8f6;
+
+      --osh-color-surface-container-lowest: #ffffff;
+      --osh-color-surface-container-low: #fff1ed;
+      --osh-color-surface-container: #fceae6;
+      --osh-color-surface-container-high: #f7e4e0;
+      --osh-color-surface-container-highest: #f1dfda;
+
+      --osh-color-on-surface: #231917;
+      --osh-color-on-surface-variant: #53433f;
+
+      --osh-color-outline: #85736f;
+      --osh-color-outline-variant: #d8c2bc;
+
+      --osh-color-inverse-surface: #392e2b;
+      --osh-color-inverse-on-surface: #ffede9;
+      --osh-color-inverse-primary: #ffb4a1;
+
+      --osh-color-shadow: #000000;
+      --osh-color-scrim: #000000;
+    }
+    // &.medium-contrast {
+    //   --osh-color-primary: #5d2515;
+    //   --osh-color-on-primary: #ffffff;
+    //   --osh-color-primary-container: #a15947;
+    //   --osh-color-on-primary-container: #ffffff;
+
+    //   --osh-color-secondary: #4b2f28;
+    //   --osh-color-on-secondary: #ffffff;
+    //   --osh-color-secondary-container: #87655c;
+    //   --osh-color-on-secondary-container: #ffffff;
+
+    //   --osh-color-tertiary: #413509;
+    //   --osh-color-on-tertiary: #ffffff;
+    //   --osh-color-tertiary-container: #7c6c3c;
+    //   --osh-color-on-tertiary-container: #ffffff;
+
+    //   --osh-color-error: #740006;
+    //   --osh-color-on-error: #ffffff;
+    //   --osh-color-error-container: #cf2c27;
+    //   --osh-color-on-error-container: #ffffff;
+
+    //   --osh-color-surface-dim: #d4c3bf;
+    //   --osh-color-surface: #fff8f6;
+    //   --osh-color-surface-bright: #fff8f6;
+
+    //   --osh-color-surface-container-lowest: #ffffff;
+    //   --osh-color-surface-container-low: #fff1ed;
+    //   --osh-color-surface-container: #f7e4e0;
+    //   --osh-color-surface-container-high: #ebd9d5;
+    //   --osh-color-surface-container-highest: #dfceca;
+
+    //   --osh-color-on-surface: #180f0d;
+    //   --osh-color-on-surface-variant: #41332f;
+
+    //   --osh-color-outline: #5f4f4b;
+    //   --osh-color-outline-variant: #7b6965;
+
+    //   --osh-color-inverse-surface: #392e2b;
+    //   --osh-color-inverse-on-surface: #ffede9;
+    //   --osh-color-inverse-primary: #ffb4a1;
+
+    //   --osh-color-shadow: #000000;
+    //   --osh-color-scrim: #000000;
+    // }
+    // &.high-contrast {
+    //   --osh-color-primary: #501b0d;
+    //   --osh-color-on-primary: #ffffff;
+    //   --osh-color-primary-container: #753726;
+    //   --osh-color-on-primary-container: #ffffff;
+
+    //   --osh-color-secondary: #3f261f;
+    //   --osh-color-on-secondary: #ffffff;
+    //   --osh-color-secondary-container: #60423a;
+    //   --osh-color-on-secondary-container: #ffffff;
+
+    //   --osh-color-tertiary: #372b02;
+    //   --osh-color-on-tertiary: #ffffff;
+    //   --osh-color-tertiary-container: #56481b;
+    //   --osh-color-on-tertiary-container: #ffffff;
+
+    //   --osh-color-error: #600004;
+    //   --osh-color-on-error: #ffffff;
+    //   --osh-color-error-container: #98000a;
+    //   --osh-color-on-error-container: #ffffff;
+
+    //   --osh-color-surface-dim: #c6b5b1;
+    //   --osh-color-surface: #fff8f6;
+    //   --osh-color-surface-bright: #fff8f6;
+
+    //   --osh-color-surface-container-lowest: #ffffff;
+    //   --osh-color-surface-container-low: #ffede9;
+    //   --osh-color-surface-container: #f1dfda;
+    //   --osh-color-surface-container-high: #e2d1cc;
+    //   --osh-color-surface-container-highest: #d4c3bf;
+
+    //   --osh-color-on-surface: #000000;
+    //   --osh-color-on-surface-variant: #000000;
+
+    //   --osh-color-outline: #372926;
+    //   --osh-color-outline-variant: #554642;
+
+    //   --osh-color-inverse-surface: #392e2b;
+    //   --osh-color-inverse-on-surface: #ffffff;
+    //   --osh-color-inverse-primary: #ffb4a1;
+
+    //   --osh-color-shadow: #000000;
+    //   --osh-color-scrim: #000000;
+    // }
+  }
+
+  &.dark-mode {
+    &.standard-contrast {
+      --osh-color-primary: #ffb4a1;
+      --osh-color-on-primary: #561f10;
+      --osh-color-primary-container: #723524;
+      --osh-color-on-primary-container: #ffdbd2;
+
+      --osh-color-secondary: #e7bdb3;
+      --osh-color-on-secondary: #442a23;
+      --osh-color-secondary-container: #5d4038;
+      --osh-color-on-secondary-container: #ffdbd2;
+
+      --osh-color-tertiary: #d9c58d;
+      --osh-color-on-tertiary: #3b2f05;
+      --osh-color-tertiary-container: #534519;
+      --osh-color-on-tertiary-container: #f7e1a6;
+
+      --osh-color-error: #ffb4ab;
+      --osh-color-on-error: #690005;
+      --osh-color-error-container: #93000a;
+      --osh-color-on-error-container: #ffdad6;
+
+      --osh-color-surface-dim: #1a110f;
+      --osh-color-surface: #1a110f;
+      --osh-color-surface-bright: #423734;
+
+      --osh-color-surface-container-lowest: #140c0a;
+      --osh-color-surface-container-low: #231917;
+      --osh-color-surface-container: #271d1b;
+      --osh-color-surface-container-high: #322825;
+      --osh-color-surface-container-highest: #3d3230;
+
+      --osh-color-on-surface: #f1dfda;
+      --osh-color-on-surface-variant: #d8c2bc;
+
+      --osh-color-outline: #a08c88;
+      --osh-color-outline-variant: #53433f;
+
+      --osh-color-inverse-surface: #f1dfda;
+      --osh-color-inverse-on-surface: #392e2b;
+      --osh-color-inverse-primary: #8f4b39;
+
+      --osh-color-shadow: #000000;
+      --osh-color-scrim: #000000;
+    }
+    // &.medium-contrast {
+    //   --osh-color-primary: #000000;
+    //   --osh-color-on-primary: #000000;
+    //   --osh-color-primary-container: #000000;
+    //   --osh-color-on-primary-container: #000000;
+    // }
+    // &.high-contrast {
+    //   --osh-color-primary: #000000;
+    //   --osh-color-on-primary: #000000;
+    //   --osh-color-primary-container: #000000;
+    //   --osh-color-on-primary-container: #000000;
+    // }
+  }
+}

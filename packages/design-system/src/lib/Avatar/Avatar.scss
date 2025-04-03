@@ -1,0 +1,76 @@
+@use '../../styles/_index' as *;
+
+$avatar-size: (
+  xs: 24px,
+  sm: 32px,
+  md: 48px,
+  lg: 64px,
+  xl: 96px,
+);
+
+$font-size: (
+  xs: 12px,
+  sm: 20px,
+  md: 28px,
+  lg: 36px,
+  xl: 44px,
+);
+
+$font-weight: (
+  xs: $font-weight-regular,
+  sm: $font-weight-regular,
+  md: $font-weight-medium,
+  lg: $font-weight-semi-bold,
+  xl: $font-weight-bold,
+);
+
+$avatar-shape: (
+  circle: 50%,
+  square: 0,
+  rounded: 8px,
+);
+
+@mixin avatarSize {
+  @each $size in 'xs', 'sm', 'md', 'lg', 'xl' {
+    &.#{$size} {
+      width: map-get($avatar-size, $size);
+      height: map-get($avatar-size, $size);
+      font-size: map-get($font-size, $size);
+      font-weight: map-get($font-weight, $size);
+
+      svg {
+        width: map-get($font-size, $size);
+        height: map-get($font-size, $size);
+      }
+    }
+  }
+}
+
+@mixin avatarShape {
+  @each $key, $value in $avatar-shape {
+    &.#{$key} {
+      border-radius: $value;
+    }
+  }
+}
+
+.osh-avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--osh-color-on-primary);
+  background-color: var(--osh-color-primary);
+
+  @include avatarSize;
+  @include avatarShape;
+
+  &.image-avatar {
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}

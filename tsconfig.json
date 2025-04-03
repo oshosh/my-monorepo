@@ -4,10 +4,17 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/osh-monorepo-e2e"
+      "path": "./packages/design-system"
     },
     {
-      "path": "./apps/osh-monorepo"
+      "path": "./apps/my-new-app"
     }
-  ]
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node10",
+      "customConditions": null
+    }
+  }
 }
