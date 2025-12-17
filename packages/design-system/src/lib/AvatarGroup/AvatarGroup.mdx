@@ -1,0 +1,69 @@
+import { Meta, Canvas, ArgTypes, Stories, Source } from '@storybook/blocks';
+import * as AvatarGroupStories from './AvatarGroup.stories';
+
+<Meta of={AvatarGroupStories} />
+
+# AvatarGroup
+
+아바타를 하나의 그룹으로 쌓은 컴포넌트
+
+## Import
+
+<Source language="tsx" code={`import { AvatarGroup } from '@my-monorepo/design-system';`} />
+
+## Usage
+
+### 최대 아바타 갯수
+
+- `max`: surplus avatar를 제외한 화면 상에 나타나는 최대 아바타 갯수
+
+<Canvas of={AvatarGroupStories.MaxAvatarNumber} />
+
+### 전체 아바타 갯수
+
+- `total`: 전체 아바타 갯수 (= 화면 상에 나타나는 아바타 갯수 + surplus 갯수)
+
+<Canvas of={AvatarGroupStories.TotalAvatarNumber} />
+
+### 초과 아바타 커스텀
+
+- `renderSurplus`: surplus avatar를 커스텀하는 함수
+  - parameter: surplus (= surplus avatar 개수 = total - max)
+  - return: `Avatar` 컴포넌트
+
+<Canvas of={AvatarGroupStories.CustomSurplusAvatar} />
+
+### 간격 변경
+
+- `spacing`: 아바타 사이의 간격
+  - `sm`: `Avatar` 너비 x 40% 만큼 겹쳐침
+  - `md`: `Avatar` 너비 x 30% 만큼 겹쳐침
+  - `lg`: `Avatar` 너비 x 20% 만큼 겹쳐침
+
+<Canvas of={AvatarGroupStories.Spacing} />
+
+### 크기 변형
+
+- `size`: 하위 모든 `Avatar`의 크기를 한번에 변경해줌
+  - `xs` | `sm` | `md` | `lg` | `xl`: 순서대로 24px, 32px, 48px, 64px, 96px 크기
+
+<Canvas of={AvatarGroupStories.Sizes} />
+
+### 모양 변경
+
+- `shape`: 하위 모든 `Avatar`의 모양을 한번에 변경해줌
+  - `circle`: 원 모양
+  - `square`: 정사각형 모양
+  - `rounded`: 둥근 정사각형 모양
+
+<Canvas of={AvatarGroupStories.Shape} />
+
+### 색상 변경
+
+HTML 요소 기본 `style` prop을 사용해 하위 모든 `Avatar` 색상 변경 합니다.
+
+<Canvas of={AvatarGroupStories.Color} />
+
+## Props
+
+<ArgTypes of={AvatarGroupStories} sort="alpha" />

@@ -4,16 +4,7 @@ import { memo, useMemo, useState } from 'react';
 import { editColorStyle } from '../../utils/styles';
 import { PersonIcon } from '../../lib/icons/PersonIcon';
 import withStyle from '../../lib/withStyle';
-
-interface AvatarProps extends React.HtmlHTMLAttributes<HTMLSpanElement> {
-  src?: string;
-  alt?: string;
-  imgProps?: Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'src' | 'alt'>;
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number;
-  shape?: 'circle' | 'square' | 'rounded';
-  children?: React.ReactNode;
-  className?: string;
-}
+import { AvatarProps } from './Avatar.type';
 
 const Avatar = (props: AvatarProps) => {
   const { src, alt, imgProps, size = 'md', shape = 'circle', children, className, style } = props;
@@ -31,17 +22,16 @@ const Avatar = (props: AvatarProps) => {
     content = <img src={src} alt={alt} {...imgProps} onError={() => setHasSrc(false)} />;
   }
 
+  const classNames = cn(
+    'osh-avatar',
+    { 'image-avatar': hasSrc },
+    { [size]: !hasNumberTypeSize },
+    shape,
+    className
+  );
+
   return (
-    <span
-      className={cn(
-        'osh-avatar',
-        { 'image-avatar': hasSrc },
-        { [size]: !hasNumberTypeSize },
-        shape,
-        className
-      )}
-      style={newStyle}
-    >
+    <span className={classNames} style={newStyle}>
       {content}
     </span>
   );
