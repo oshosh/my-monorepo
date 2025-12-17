@@ -1,9 +1,9 @@
 import './Avatar.scss';
 import cn from 'classnames';
 import { memo, useMemo, useState } from 'react';
-import { editColorStyle } from '@design-system/utils/styles';
-import { PersonIcon } from '@design-system/lib/icons/PersonIcon';
-import withStyle from '@design-system/lib/withStyle';
+import { editColorStyle } from '../../utils/styles';
+import { PersonIcon } from '../../lib/icons/PersonIcon';
+import withStyle from '../../lib/withStyle';
 
 interface AvatarProps extends React.HtmlHTMLAttributes<HTMLSpanElement> {
   src?: string;

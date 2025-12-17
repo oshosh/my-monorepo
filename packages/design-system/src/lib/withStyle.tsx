@@ -1,4 +1,4 @@
-import { ColorType } from '@design-system/types/color';
+import { ColorType } from '../types/color';
 import { CSS_COLOR_PROPERTIES } from './constants/css-color-properties';
 import { ComponentType, CSSProperties } from 'react';
 

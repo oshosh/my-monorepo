@@ -1,5 +1,5 @@
-import { editColor } from '@design-system/utils/styles';
-import { ColorType } from '@design-system/types/color';
+import { editColor } from '../../../utils/styles';
+import { ColorType } from '../../../types/color';
 
 interface PersonIconProps {
   size?: number;

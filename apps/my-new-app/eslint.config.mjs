@@ -1,5 +1,5 @@
 import nx from '@nx/eslint-plugin';
-import baseConfig from '../../eslint.config.mjs';
+import baseConfig from '@my-monorepo/config-eslint';
 
 export default [
   ...baseConfig,

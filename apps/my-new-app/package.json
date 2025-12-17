@@ -7,6 +7,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@my-monorepo/config-eslint": "workspace:*",
     "sass": "^1.55.0"
   }
 }

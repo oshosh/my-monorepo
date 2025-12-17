@@ -24,6 +24,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@my-monorepo/config-eslint": "workspace:*",
     "@storybook/addon-links": "^8.6.11",
     "@storybook/addon-themes": "^8.6.11",
     "@storybook/preview-api": "^8.6.11",
