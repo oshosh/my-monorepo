@@ -21,6 +21,24 @@ export default defineConfig(() => ({
     coverage: {
       reportsDirectory: './test-output/vitest/coverage',
       provider: 'v8' as const,
+      reporter: ['text', 'json-summary'],
+      thresholds: {
+        lines: 60,
+        functions: 60,
+        branches: 60,
+        statements: 60,
+      },
+      exclude: [
+        '**/*.stories.*',
+        '**/index.ts',
+        '**/*.type.ts',
+        '**/src/types/**',
+        '**/*.config.*',
+        '**/vite.config.*',
+        '.storybook/**',
+        'main.ts',
+        'preview.ts',
+      ],
     },
   },
 }));

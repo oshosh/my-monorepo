@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Avatar } from '@design-system/lib/Avatar';
-import { PersonIcon } from '@design-system/lib/icons/PersonIcon';
+import Avatar from './Avatar';
+import { PersonIcon } from '../../lib/icons/PersonIcon';
 
 const meta: Meta<typeof Avatar> = {
   component: Avatar,

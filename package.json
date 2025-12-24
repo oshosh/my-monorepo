@@ -10,6 +10,7 @@
     "test:app": "nx test my-new-app",
     "test:ui": "nx test-storybook design-system",
     "test:vitest": "nx test @my-monorepo/design-system --ui --skip-nx-cache --watch",
+    "test:coverage": "nx test @my-monorepo/design-system --coverage --skip-nx-cache",
     "build:design-system": "nx build @my-monorepo/design-system",
     "dev:app:start": "npx nx serve my-new-app",
     "chromatic": "nx build-storybook design-system && chromatic --storybook-build-dir=packages/design-system/storybook-static"
