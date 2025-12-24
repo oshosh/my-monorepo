@@ -20,8 +20,8 @@
     "storybook": "storybook dev -p 6006"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^19.0.3",
+    "react-dom": "^19.0.3"
   },
   "devDependencies": {
     "@my-monorepo/config-eslint": "workspace:*",
@@ -30,5 +30,19 @@
     "@storybook/preview-api": "^8.6.11",
     "sass": "^1.55.0",
     "storybook-dark-mode": "^4.0.2"
+  },
+  "nx": {
+    "targets": {
+      "test": {
+        "executor": "@nx/vitest:test",
+        "outputs": [
+          "{options.reportsDirectory}"
+        ],
+        "options": {
+          "configFile": "packages/design-system/vite.config.mts",
+          "reportsDirectory": "../../coverage/packages/design-system"
+        }
+      }
+    }
   }
 }

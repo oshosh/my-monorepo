@@ -1,4 +1,4 @@
-import { CSS_COLOR_PROPERTIES } from '@design-system/lib/constants/css-color-properties';
+import { CSS_COLOR_PROPERTIES } from '../lib/constants/css-color-properties';
 import { CSSProperties } from 'react';
 
 const getColorValue = (colorVariable: string) => {
